@@ -1,0 +1,838 @@
+{
+  "swaggerVersion": "1.2",
+  "basePath": "http://example.com",
+  "resourcePath": "/",
+  "apis": [
+    {
+      "path": "/bookings",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "List",
+          "parameters": [
+            {
+              "name": "account_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/booking_selectors",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "ListSelectors",
+          "parameters": [
+            {
+              "name": "account_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        },
+        {
+          "method": "GET",
+          "nickname": "ListSelectors1",
+          "parameters": [
+            {
+              "name": "account_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/v3.0/bookings",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "List1",
+          "parameters": [
+            {
+              "name": "account_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/v3.0/bookings/transfer",
+      "operations": [
+        {
+          "method": "POST",
+          "nickname": "Transfer",
+          "parameters": [
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "TransferRequest"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/v3.0/bookings/share",
+      "operations": [
+        {
+          "method": "POST",
+          "nickname": "Share",
+          "parameters": [
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "ShareRequest"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/bookings_candidates",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "List",
+          "parameters": [
+            {
+              "name": "account_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "booking_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "booking_status_search",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        },
+        {
+          "method": "GET",
+          "nickname": "ListCopy",
+          "parameters": [
+            {
+              "name": "account_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "booking_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "booking_status_search",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/v3.0/qa/search",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "QAScreenSearch",
+          "parameters": [
+            {
+              "name": "page",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "per_page",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "context",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            },
+            {
+              "name": "search",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/v3.0/qa",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "QAScreen",
+          "parameters": [
+            {
+              "name": "page",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "per_page",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "context",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/v3.0/bookings_candidates",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "List",
+          "parameters": [
+            {
+              "name": "booking_id",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "per_page",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "page",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "search",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "integer",
+              "format": "int32"
+            },
+            {
+              "name": "sort",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "Addcandidate",
+          "parameters": [],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        },
+        {
+          "method": "GET",
+          "nickname": "IKMListassessments",
+          "parameters": [],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        },
+        {
+          "method": "GET",
+          "nickname": "NewRequest",
+          "parameters": [],
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/accounts/find_user_account",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "FindUserAccounts",
+          "parameters": [
+            {
+              "name": "Authorization",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/auth.json",
+      "operations": [
+        {
+          "method": "POST",
+          "nickname": "Authenticate",
+          "parameters": [
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "AuthenticateRequest"
+            }
+          ],
+          "authorizations": {},
+          "produces": [
+            "application/json"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    },
+    {
+      "path": "/GetResultService.asmx",
+      "operations": [
+        {
+          "method": "GET",
+          "nickname": "WSDL",
+          "parameters": [
+            {
+              "name": "wsdl",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            },
+            {
+              "name": "Content-Type",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "text/xml",
+              "uniqueItems": false,
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "text/xml"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        },
+        {
+          "method": "GET",
+          "nickname": "WSDLCopy",
+          "parameters": [
+            {
+              "name": "wsdl",
+              "description": "",
+              "paramType": "query",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "string"
+            },
+            {
+              "name": "Content-Type",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "text/xml",
+              "uniqueItems": false,
+              "type": "string"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "text/xml"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        },
+        {
+          "method": "POST",
+          "nickname": "IntegAuth",
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "text/xml",
+              "uniqueItems": false,
+              "type": "string"
+            },
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "Envelope"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "text/xml"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        },
+        {
+          "method": "POST",
+          "nickname": "Savilleauth",
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "description": "",
+              "paramType": "header",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "text/xml",
+              "uniqueItems": false,
+              "type": "string"
+            },
+            {
+              "name": "Body",
+              "description": "",
+              "paramType": "body",
+              "required": true,
+              "allowMultiple": false,
+              "defaultValue": "",
+              "uniqueItems": false,
+              "type": "Envelope"
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "text/xml"
+          ],
+          "responseMessages": [],
+          "uniqueItems": false,
+          "type": "void"
+        }
+      ]
+    }
+  ],
+  "models": {
+    "TransferRequest": {
+      "id": "TransferRequest",
+      "required": [
+        "from",
+        "to",
+        "bookings"
+      ],
+      "properties": {
+        "from": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "string"
+        },
+        "to": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "string"
+        },
+        "bookings": {
+          "description": "",
+          "items": {
+            "type": "string"
+          },
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "array"
+        }
+      }
+    },
+    "ShareRequest": {
+      "id": "ShareRequest",
+      "required": [
+        "from",
+        "to",
+        "bookings"
+      ],
+      "properties": {
+        "from": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "string"
+        },
+        "to": {
+          "description": "",
+          "items": {
+            "type": "string"
+          },
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "array"
+        },
+        "bookings": {
+          "description": "",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "defaultValue": "",
+          "minimum": "",
+          "maximum": "",
+          "uniqueItems": false,
+          "type": "array"
+        }
+      }
+    },
+    "AuthenticateRequest": {
+      "id": "AuthenticateRequest",
+      "required": [
+        "auth_id",
+        "password"
+      ],
+      "properties": {
+        "auth_id": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "string"
+        },
+        "password": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "string"
+        }
+      }
+    },
+    "Envelope": {
+      "id": "Envelope",
+      "required": [
+        "Header",
+        "Body"
+      ],
+      "properties": {
+        "Header": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "$ref": "Header"
+        },
+        "Body": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "$ref": "Body"
+        }
+      }
+    },
+    "Header": {
+      "id": "Header",
+      "required": [
+        "GetResultServiceHeader"
+      ],
+      "properties": {
+        "GetResultServiceHeader": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "$ref": "GetResultServiceHeader"
+        }
+      }
+    },
+    "GetResultServiceHeader": {
+      "id": "GetResultServiceHeader",
+      "required": [
+        "Username",
+        "Password"
+      ],
+      "properties": {
+        "Username": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "string"
+        },
+        "Password": {
+          "description": "",
+          "defaultValue": "",
+          "uniqueItems": false,
+          "type": "string"
+        }
+      }
+    },
+    "Body": {
+      "id": "Body",
+      "required": [],
+      "properties": {}
+    }
+  },
+  "authorizations": {},
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ]
+}
